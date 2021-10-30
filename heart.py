@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 import streamlit as st
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
@@ -27,12 +26,6 @@ st.write(df.describe())
 
 # select best features
 df=df.drop('fbs',axis=1)
-
-# show data as chart
-st.header('data plot')
-st.line_chart(df)
-
-
 
 
 # split data 
